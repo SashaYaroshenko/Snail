@@ -117,7 +117,7 @@
                 dy--;
                 xd++;
                 yd++;
-                if (array[array.GetLength(0) / 2][array[row].GetLength(0) / 2 - 1] == array[row][col] || result.Count() == array.GetLength(0) * array[row].GetLength(0))
+                if (result.Count== array.GetLength(0) * array[row].GetLength(0)-1)
                 {
                     break;
                 }
