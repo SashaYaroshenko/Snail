@@ -91,22 +91,23 @@
             }
             while (array[row][col] != array[array.GetLength(0) / 2][array[row].GetLength(0) / 2])
             {
-                while (col < array[row].GetLength(0)-xd)
+                while (col < array[row].GetLength(0)-xd && result.Count() != array.GetLength(0) * array[row].GetLength(0))
                 {
                     result.Add(array[row][col]);
                     col++;
                 }
-                while (row < array.GetLength(0)-yd)
+                while (row < array.GetLength(0)-yd && result.Count() != array.GetLength(0) * array[row].GetLength(0))
                 {                   
                     result.Add(array[row][col]);
                     row++;
                 }
-                while (col > array[row].GetLength(0)-dy)
+                while (col > array[row].GetLength(0)-dy && result.Count() != array.GetLength(0) * array[row].GetLength(0))
                 {                    
                     result.Add(array[row][col]);
                     col--;
                 }
-                while (row > array.GetLength(0)-dx)
+                while (row > array.GetLength(0)-dx && result.Count() != array.GetLength(0) * array[row].GetLength(0)
+                    )
                 {                    
                     result.Add(array[row][col]);
                     row--;
