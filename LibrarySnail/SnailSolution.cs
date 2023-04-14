@@ -89,7 +89,8 @@
             {
                 return new int[0];
             }
-            while (array[row][col] != array[array.GetLength(0) / 2][array[row].GetLength(0) / 2])
+            //while (/*array[row][col] != array[array.GetLength(0) / 2][array[row].GetLength(0) / 2]*/)
+            while(true)
             {
                 while (col < array[row].GetLength(0)-xd && result.Count() != array.GetLength(0) * array[row].GetLength(0))
                 {
